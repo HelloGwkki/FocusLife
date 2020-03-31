@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>FOCUS YOUR LIFE.</title>
+        <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/core.js"></script>
+        <script>
+            console.log(`%c FOCUS YOU LIFE `,"color:#FFFFFF; background:black; font-size:50px")
+            function ChangeTime(){
+                var GetTime = new Date();
+                var Hour = String(GetTime.getHours());
+                var Minute = String(GetTime.getMinutes());
+                var Second = String(GetTime.getSeconds());
+                if (Hour.length==1){
+                    Hour = "0"+Hour
+                }
+                if (Minute.length==1){
+                    Minute = "0"+Minute
+                }
+                if (Second.length==1){
+                    Second = "0"+Second
+                }
+                Time=Hour+" : "+Minute+" : "+Second
+                document.getElementById("time").innerHTML = Time;
+            };
+            setInterval(function(){ChangeTime();}, 500);
+        </script>
+        <style>
+            body {
+                background-color: black;
+            }
+            @font-face {
+                font-family: kremlin;
+                src: url("font/kremlin.ttf");
+            }
+            div {
+                color:white;
+                font-family: kremlin;
+                text-align: center;
+            }
+            #time {
+                font-size: 150px;
+            }
+            #JDI {
+                font-size: 100px;
+            }
+            #copyright {
+                color: rgb(15, 15, 15);
+            }
+            a:link {
+                color:#151515;
+            }
+            a:visited {
+                color:#151515;
+            }
+            a:hover {
+                color:dimgray;
+            }
+            a:active {
+                color:dimgray;
+            }
+        </style>
+    </head>
+    <body>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="time">▓▓ : ▓▓ : ▓▓</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="JDI">JUST DO IT.</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#151515 size=3>
+        <div id="copyright">▇▅▃▂▁ COPYRIGHT 2020 <a href="https://github.com/HelloGwkki" target="_blank">GWKKI</a> ▁▂▃▅▇</div>
+    </body>
+</html>
