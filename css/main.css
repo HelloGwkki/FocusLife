@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+@font-face {
+    font-family: kremlin;
+    src: url("https://hellogwkki.gitee.io/cdn/font/kremlin.ttf"),
+        url("../font/kremlin.ttf");
+}
+@font-face {
+    font-family: molot;
+    src: url("https://hellogwkki.gitee.io/cdn/font/molot.otf"),
+        url("../font/molot.otf");
+}
+div {
+    color:white;
+    font-family: kremlin;
+    text-align: center;
+}
+#time {
+    font-size: 150px;
+}
+#JDI {
+    font-size: 100px;
+}
+#copyright {
+    color: #151515;
+}
+#leave {
+    text-align: center;
+    font-family: molot;
+    color: #151515;
+}
+.split {
+    width: 0px;
+    height: 80px;
+}
+a:link {
+    color: #151515;
+}
+a:visited {
+    color: #151515;
+}
+a:hover {
+    color: dimgray;
+}
+a:active {
+    color: dimgray;
+}
